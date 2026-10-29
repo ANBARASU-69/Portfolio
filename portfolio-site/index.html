@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anbarasu P – Junior Cloud Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Anbarasu P</b>
+    <nav aria-label="Sections"><a href="#cloud">Cloud</a><a href="#security">Security</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+  <div class="hero">
+    <div>
+      <h1>Anbarasu P</h1>
+      <div class="role">Junior cloud engineer</div>
+      <p>I build and secure workloads on AWS. My background is in cyber security, so I design for private networking, least-privilege access and high availability from the start.</p>
+      <div class="btns">
+        <a class="btn main" href="#cloud">See my cloud projects</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure>
+      <svg viewBox="0 0 520 330" role="img" aria-labelledby="dgt dgd">
+        <title id="dgt">Highly available web app on AWS</title>
+        <desc id="dgd">Route 53 sends traffic to an Application Load Balancer, which spreads requests across EC2 instances in an Auto Scaling Group inside private subnets in two availability zones.</desc>
+        <rect class="n" x="20" y="22" width="92" height="40" rx="8"/><text x="66" y="46" text-anchor="middle">Users</text>
+        <rect class="n" x="20" y="102" width="92" height="40" rx="8"/><text x="66" y="126" text-anchor="middle">Route 53</text>
+        <rect class="hl" x="20" y="182" width="92" height="40" rx="8"/><text x="66" y="206" text-anchor="middle">ALB</text>
+        <path class="ln" d="M66 62V102M66 142V182"/>
+        <rect class="zone" x="150" y="30" width="350" height="270" rx="14"/>
+        <text class="sm" x="164" y="52">Auto Scaling Group, private subnets</text>
+        <rect class="zone" x="170" y="68" width="150" height="212" rx="10"/>
+        <text class="sm" x="182" y="88">Availability zone A</text>
+        <rect class="zone" x="340" y="68" width="150" height="212" rx="10"/>
+        <text class="sm" x="352" y="88">Availability zone B</text>
+        <rect class="n" x="190" y="108" width="110" height="44" rx="8"/><text x="245" y="135" text-anchor="middle">EC2 web server</text>
+        <rect class="n" x="190" y="196" width="110" height="44" rx="8"/><text x="245" y="223" text-anchor="middle">EC2 web server</text>
+        <rect class="n" x="360" y="108" width="110" height="44" rx="8"/><text x="415" y="135" text-anchor="middle">EC2 web server</text>
+        <rect class="n" x="360" y="196" width="110" height="44" rx="8"/><text x="415" y="223" text-anchor="middle">EC2 web server</text>
+        <path class="ln" d="M112 202H150M150 202V130M150 130H190M150 202V218H190"/>
+        <path class="ln" d="M150 130V60H330V218H360M330 130H360"/>
+        <circle class="pk" r="4"><animateMotion dur="1.6s" repeatCount="indefinite" path="M66 62V182"/></circle>
+        <circle class="pk" r="4"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M66 62V182"/></circle>
+        <circle class="pk2" r="4"><animateMotion dur="1.4s" begin="0.3s" repeatCount="indefinite" path="M112 202H150V130H190"/></circle>
+        <circle class="pk2" r="4"><animateMotion dur="1.4s" begin="0.9s" repeatCount="indefinite" path="M112 202H150V218H190"/></circle>
+        <circle class="pk2" r="4"><animateMotion dur="3s" begin="0.5s" repeatCount="indefinite" path="M112 202H150V60H330V130H360"/></circle>
+        <circle class="pk2" r="4"><animateMotion dur="3s" begin="1.7s" repeatCount="indefinite" path="M112 202H150V60H330V218H360"/></circle>
+      </svg>
+      <figcaption>The shape of my high-availability web app project.</figcaption>
+    </figure>
+  </div>
+
+  <section id="cloud">
+    <h2>Cloud projects</h2>
+    <article class="proj">
+      <div><h3>High-availability web app</h3><div class="meta">AWS</div></div>
+      <div>
+        <p>A web application served through an Application Load Balancer, with EC2 instances in private subnets managed by an Auto Scaling Group so the site stays up if an instance fails.</p>
+        <figure class='arch'><svg viewBox='0 0 520 160' role='img' aria-label='Users reach an Application Load Balancer, which spreads traffic across EC2 instances in an Auto Scaling Group'><rect class='n t2' x='10' y='55' width='96' height='40' rx='8'/><text x='58' y='79' text-anchor='middle'>Users</text><rect class='hl' x='150' y='55' width='96' height='40' rx='8'/><text x='198' y='79' text-anchor='middle'>ALB</text><rect class='zone' x='312' y='8' width='196' height='128' rx='10'/><path class='ln' d='M106 75H150M246 75H284M284 33V117M284 33H330M284 75H330M284 117H330'/><rect class='n t1' x='330' y='18' width='150' height='30' rx='7'/><text x='405' y='38' text-anchor='middle'>EC2 web server</text><rect class='n t1' x='330' y='60' width='150' height='30' rx='7'/><text x='405' y='80' text-anchor='middle'>EC2 web server</text><rect class='n t1' x='330' y='102' width='150' height='30' rx='7'/><text x='405' y='122' text-anchor='middle'>EC2 web server</text><text class='sm' x='322' y='152'>Auto Scaling Group</text><circle class='pk' r='4'><animateMotion dur='1s' repeatCount='indefinite' path='M106 75H150'/></circle><circle class='pk2' r='4'><animateMotion dur='1.6s' repeatCount='indefinite' path='M246 75H284V33H330'/></circle><circle class='pk2' r='4'><animateMotion dur='1.6s' begin='0.5s' repeatCount='indefinite' path='M246 75H330'/></circle><circle class='pk2' r='4'><animateMotion dur='1.6s' begin='1s' repeatCount='indefinite' path='M246 75H284V117H330'/></circle></svg></figure>
+        <ul class="tags"><li>ALB</li><li>Auto Scaling</li><li>EC2</li><li>Private subnets</li></ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div><h3>Route 53 weighted routing</h3><div class="meta">AWS</div></div>
+      <div>
+        <p>DNS routing that splits traffic between endpoints by weight, set up in Route 53.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='Route 53 splits user traffic between two endpoints by weight, sending more to the higher-weighted one'><rect class='n t2' x='10' y='50' width='96' height='50' rx='8'/><text x='58' y='72' text-anchor='middle'>Users</text><text class='sm' x='58' y='88' text-anchor='middle'>browser</text><rect class='n t3' x='150' y='50' width='96' height='50' rx='8'/><text x='198' y='72' text-anchor='middle'>Route 53</text><text class='sm' x='198' y='88' text-anchor='middle'>weighted rules</text><rect class='n t1' x='330' y='14' width='170' height='44' rx='8'/><text x='415' y='33' text-anchor='middle'>Endpoint A</text><text class='sm' x='415' y='49' text-anchor='middle'>higher weight</text><rect class='n t4' x='330' y='92' width='170' height='44' rx='8'/><text x='415' y='111' text-anchor='middle'>Endpoint B</text><text class='sm' x='415' y='127' text-anchor='middle'>lower weight</text><path class='ln' d='M106 75H150M246 75H288M288 36V114M288 36H330M288 114H330'/><circle class='pk' r='4'><animateMotion dur='1.2s' repeatCount='indefinite' path='M106 75H150'/></circle><circle class='pk2' r='4'><animateMotion dur='1.2s' repeatCount='indefinite' path='M246 75H288V36H330'/></circle><circle class='pk2' r='4'><animateMotion dur='1.2s' begin='0.4s' repeatCount='indefinite' path='M246 75H288V36H330'/></circle><circle class='pk2' r='4'><animateMotion dur='1.2s' begin='0.8s' repeatCount='indefinite' path='M246 75H288V36H330'/></circle><circle class='pk3' r='4'><animateMotion dur='1.2s' begin='0.2s' repeatCount='indefinite' path='M246 75H288V114H330'/></circle></svg></figure>
+        <ul class="tags"><li>Route 53</li><li>DNS</li><li>Weighted routing</li></ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div><h3>EC2 website with a custom domain</h3><div class="meta">AWS</div></div>
+      <div>
+        <p>A website hosted on an EC2 instance and reachable through my own domain name.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='A user looks up the custom domain in Route 53, gets the address, then connects to the Apache2 website on EC2'><rect class='n t3' x='212' y='10' width='96' height='50' rx='8'/><text x='260' y='32' text-anchor='middle'>Route 53</text><text class='sm' x='260' y='48' text-anchor='middle'>custom domain</text><rect class='n t2' x='10' y='78' width='96' height='50' rx='8'/><text x='58' y='100' text-anchor='middle'>Users</text><text class='sm' x='58' y='116' text-anchor='middle'>browser</text><rect class='n t1' x='414' y='78' width='96' height='50' rx='8'/><text x='462' y='100' text-anchor='middle'>EC2</text><text class='sm' x='462' y='116' text-anchor='middle'>Apache2</text><path class='ln' d='M58 78V35H212M106 103H414'/><circle class='pk3' r='4'><animateMotion dur='1.4s' repeatCount='indefinite' path='M58 78V35H212'/></circle><circle class='pk3' r='4'><animateMotion dur='1.4s' begin='0.7s' repeatCount='indefinite' path='M212 35H58V78'/></circle><circle class='pk' r='4'><animateMotion dur='1.4s' begin='0.3s' repeatCount='indefinite' path='M106 103H414'/></circle><circle class='pk2' r='4'><animateMotion dur='1.4s' begin='1s' repeatCount='indefinite' path='M106 103H414'/></circle></svg></figure>
+        <ul class="tags"><li>EC2</li><li>Apache2</li><li>Route 53</li></ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div><h3>Cross-account S3 access</h3><div class="meta">AWS</div></div>
+      <div>
+        <p>An IAM user in one AWS account uploads objects into an S3 bucket owned by a second account, allowed through a bucket policy.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='An IAM user in Account A uploads to an S3 bucket in Account B, allowed by the bucket policy'><rect class='zone zc3' x='10' y='10' width='150' height='130' rx='10'/><rect class='zone zc2' x='240' y='10' width='270' height='130' rx='10'/><text class='sm' x='22' y='132'>Account A</text><text class='sm' x='252' y='132'>Account B</text><path class='ln' d='M136 75H256M364 75H384'/><rect class='n t3' x='34' y='50' width='102' height='50' rx='8'/><text x='85' y='72' text-anchor='middle'>IAM user</text><text class='sm' x='85' y='88' text-anchor='middle'>uploads files</text><rect class='n t4' x='256' y='50' width='108' height='50' rx='8'/><text x='310' y='72' text-anchor='middle'>Bucket policy</text><text class='sm' x='310' y='88' text-anchor='middle'>allows Account A</text><rect class='n t1' x='384' y='50' width='108' height='50' rx='8'/><text x='438' y='72' text-anchor='middle'>S3 bucket</text><text class='sm' x='438' y='88' text-anchor='middle'>stores objects</text><circle class='pk' r='4'><animateMotion dur='1.3s' repeatCount='indefinite' path='M136 75H256'/></circle><circle class='pk2' r='4'><animateMotion dur='1.3s' begin='0.65s' repeatCount='indefinite' path='M136 75H256'/></circle><circle class='pk3' r='4'><animateMotion dur='1.3s' begin='0.9s' repeatCount='indefinite' path='M364 75H384'/></circle></svg></figure>
+        <ul class="tags"><li>S3</li><li>IAM</li><li>Bucket policy</li></ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div><h3>CI/CD pipeline to EC2</h3><div class="meta">AWS, DevOps</div></div>
+      <div>
+        <p>A push to GitHub triggers GitHub Actions, which builds a Docker image and pushes it to Amazon ECR. The image is then deployed to an EC2 instance provisioned with Terraform, with CloudWatch monitoring.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='A push to GitHub starts GitHub Actions, which builds an image, pushes it to ECR and deploys it to EC2, which Terraform provisions and CloudWatch monitors'><path class='ln' d='M102 75H142M234 75H274M366 75H406M452 36V50M452 100V114'/><rect class='n t4' x='10' y='50' width='92' height='50' rx='8'/><text x='56' y='72' text-anchor='middle'>GitHub</text><text class='sm' x='56' y='88' text-anchor='middle'>git push</text><rect class='n t3' x='142' y='50' width='92' height='50' rx='8'/><text x='188' y='72' text-anchor='middle'>Actions</text><text class='sm' x='188' y='88' text-anchor='middle'>build image</text><rect class='n t2' x='274' y='50' width='92' height='50' rx='8'/><text x='320' y='72' text-anchor='middle'>ECR</text><text class='sm' x='320' y='88' text-anchor='middle'>image registry</text><rect class='n t1' x='406' y='50' width='92' height='50' rx='8'/><text x='452' y='72' text-anchor='middle'>EC2</text><text class='sm' x='452' y='88' text-anchor='middle'>deploy</text><rect class='n t3' x='406' y='6' width='92' height='30' rx='7'/><text x='452' y='26' text-anchor='middle'>Terraform</text><rect class='n t4' x='406' y='114' width='92' height='30' rx='7'/><text x='452' y='134' text-anchor='middle'>CloudWatch</text><circle class='pk' r='4'><animateMotion dur='1.5s' repeatCount='indefinite' path='M102 75H142'/></circle><circle class='pk2' r='4'><animateMotion dur='1.5s' begin='0.5s' repeatCount='indefinite' path='M234 75H274'/></circle><circle class='pk3' r='4'><animateMotion dur='1.5s' begin='1s' repeatCount='indefinite' path='M366 75H406'/></circle><circle class='pk4' r='4'><animateMotion dur='1.5s' begin='0.4s' repeatCount='indefinite' path='M452 36V50'/></circle><circle class='pk4' r='4'><animateMotion dur='1.5s' begin='1.2s' repeatCount='indefinite' path='M452 100V114'/></circle></svg></figure>
+        <ul class="tags"><li>GitHub Actions</li><li>Docker</li><li>ECR</li><li>Terraform</li><li>EC2</li><li>CloudWatch</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="security">
+    <h2>Security and networking projects</h2>
+    <article class="proj">
+      <div><h3>Secure Network Messenger</h3><div class="meta">2026, team of 4</div></div>
+      <div>
+        <p>A messenger that uses SSH to improve anonymity. I worked on the protocols and networking concepts.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='Messages travel between two clients through an encrypted SSH channel'><path class='ln' d='M106 75H212M308 75H414'/><rect class='n t2' x='10' y='50' width='96' height='50' rx='8'/><text x='58' y='72' text-anchor='middle'>Client A</text><text class='sm' x='58' y='88' text-anchor='middle'>sends message</text><rect class='hl' x='212' y='50' width='96' height='50' rx='8'/><text x='260' y='72' text-anchor='middle'>SSH</text><text class='sm' x='260' y='88' text-anchor='middle'>encrypted</text><rect class='n t3' x='414' y='50' width='96' height='50' rx='8'/><text x='462' y='72' text-anchor='middle'>Client B</text><text class='sm' x='462' y='88' text-anchor='middle'>reads message</text><circle class='pk' r='4'><animateMotion dur='1.4s' repeatCount='indefinite' path='M106 75H212'/></circle><circle class='pk' r='4'><animateMotion dur='1.4s' begin='0.7s' repeatCount='indefinite' path='M106 75H212'/></circle><circle class='pk3' r='4'><animateMotion dur='1.4s' begin='0.3s' repeatCount='indefinite' path='M308 75H414'/></circle><circle class='pk3' r='4'><animateMotion dur='1.4s' begin='1s' repeatCount='indefinite' path='M308 75H414'/></circle></svg></figure>
+        <ul class="tags"><li>SSH</li><li>Networking</li><li>Protocols</li></ul>
+      </div>
+    </article>
+    <article class="proj">
+      <div><h3>SystemCore &amp; Mesh Analysis</h3><div class="meta">Team of 4</div></div>
+      <div>
+        <p>A Linux network analysis tool. I worked on the protocols and networking concepts.</p>
+        <figure class='arch'><svg viewBox='0 0 520 150' role='img' aria-label='Traffic moves across a mesh of hosts, and a Linux tool analyzes it and produces results'><rect class='zone zc4' x='10' y='10' width='150' height='130' rx='10'/><text class='sm' x='22' y='132'>Network mesh</text><path class='ln' d='M40 40H130V110H40ZM40 40L130 110M130 40L40 110M160 75H212M308 75H414'/><circle class='n t1' cx='40' cy='40' r='10'/><circle class='n t1' cx='130' cy='40' r='10'/><circle class='n t1' cx='40' cy='110' r='10'/><circle class='n t1' cx='130' cy='110' r='10'/><circle class='n t4' cx='85' cy='75' r='10'/><rect class='n t3' x='212' y='50' width='96' height='50' rx='8'/><text x='260' y='72' text-anchor='middle'>Linux tool</text><text class='sm' x='260' y='88' text-anchor='middle'>analyzes</text><rect class='n t1' x='414' y='50' width='96' height='50' rx='8'/><text x='462' y='72' text-anchor='middle'>Analysis</text><text class='sm' x='462' y='88' text-anchor='middle'>results</text><circle class='pk4' r='4'><animateMotion dur='1.2s' repeatCount='indefinite' path='M40 40H130'/></circle><circle class='pk' r='4'><animateMotion dur='1.2s' begin='0.4s' repeatCount='indefinite' path='M130 40V110'/></circle><circle class='pk2' r='4'><animateMotion dur='1.2s' begin='0.8s' repeatCount='indefinite' path='M130 110H40'/></circle><circle class='pk3' r='4'><animateMotion dur='1.2s' repeatCount='indefinite' path='M160 75H212'/></circle><circle class='pk3' r='4'><animateMotion dur='1.2s' begin='0.6s' repeatCount='indefinite' path='M308 75H414'/></circle></svg></figure>
+        <ul class="tags"><li>Linux</li><li>Network analysis</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="about">
+    <h2>Background</h2>
+    <div class="cols">
+      <div>
+        <h3>Experience and education</h3>
+        <dl>
+          <dt>Cybercrime exposure internship</dt>
+          <dd>Puducherry Police Cyber Crime Cell, 2024</dd>
+          <dt>BE, Cyber Security</dt>
+          <dd>Mahendra Engineering College, Anna University, 2026. CGPA 7.48</dd>
+          <dt>12th standard</dt>
+          <dd>456 marks</dd>
+          <dt>10th standard</dt>
+          <dd>360 marks</dd>
+          <dt>Publication</dt>
+          <dd>International Journal of Science and Engineering (ISSN online 2348-4098, print 2395-4752)</dd>
+        </dl>
+        <h3>Certifications</h3>
+        <ul>
+          <li>AWS Cloud Practitioner</li>
+          <li>EC-Council Network Defense Essentials (NDE)</li>
+          <li>Cisco Networking Course</li>
+          <li>OPSWAT Cyber Security Fundamentals Associate</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Technical skills</h3>
+        <ul class="tags" style="margin-bottom:28px">
+          <li>Linux (Ubuntu)</li><li>AWS</li><li>EC2</li><li>S3</li><li>Lambda</li><li>IAM</li><li>Networking</li><li>Python</li><li>Apache2</li><li>Docker</li><li>Kubernetes</li><li>GitHub</li>
+        </ul>
+        <h3>Working style</h3>
+        <ul class="tags">
+          <li>Communication</li><li>Problem-solving</li><li>Time management</li><li>Continuous learning</li><li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>I’m looking for a junior cloud engineer role. The best way to reach me is by email.</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:anbarasu.cyber@gmail.com">anbarasu.cyber@gmail.com</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/anbarasu-p-690062297">LinkedIn</a>
+      <a class="btn alt" href="https://github.com/ANBARASU-69">GitHub</a>
+      <a class="btn alt" href="tel:+918778399018">Call 8778399018</a>
+    </div>
+  </section>
+  </main>
+
+  <footer>Anbarasu P, Salem, India</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
